@@ -23,8 +23,8 @@ title('Проекция исходного изображения на плос�
 [rho_max_index, theta_max_index] = find(image_haf == max(image_haf,[],"all"));
 rho_max = rho(rho_max_index(1));
 theta_max = theta(theta_max_index(1));
-a_max = -cos(theta_max*pi/180)/sin(theta_max*pi/180);
-b_max = rho_max/sin(theta_max*pi/180);
+a_max = -cos(theta_max*pi/180)/sin(theta_max*pi/180)
+b_max = rho_max/sin(theta_max*pi/180)
 %% Построение прямой на исходном изображении
 for x = x_min:1:x_max
      y = a_max*x+b_max;
